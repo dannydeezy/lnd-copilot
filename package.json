@@ -1,0 +1,16 @@
+{
+  "name": "lnd-copilot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ln-service": "^54.2.2",
+    "sqs-consumer": "^5.7.0"
+  }
+}

@@ -18,3 +18,5 @@ the copilot only can conduct specific operations:
 - close channel
 - rebalance at a max fee rate (configure `MAX_REBALANCE_PPM` in `config.json`)
 - update channel policy
+- 
+there is also opportunity to extend policy to even finer grained controls like remaining OFAC-compliant with channel partners, or only connecting to clearnet nodes from non-sanctioned jurisdictions, etc), whatever you want!

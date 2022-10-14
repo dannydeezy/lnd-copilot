@@ -10,7 +10,7 @@ you configure what operations are permitted
 - create a readonly macaroon and give it to them, they will use this to monitor your node
 - the manager gives you an SQS queue to subscribe to, and some AWS account credentials
 - configure a `config.json` with all the revelant values (see `sample-config.json`)
-- profit
+- profit, while keeping peace of mind that you still control your keys
 
 ### security
 the copilot only can conduct specific operations:

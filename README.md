@@ -3,7 +3,7 @@ delegate management of your lnd node to a third party with limited permissions
 
 copilot runs alongside your lnd node and subscribes to commands from a third-party SQS queue
 
-permitted operations are configurable by you: for example "open channel, close channel, update channel policy, and rebalance at max ppm X"
+permitted operations are configurable by you
 
 ### setup
 - find a node management specialist like (@dannydeezy)[https://t.me/dannydeezy]

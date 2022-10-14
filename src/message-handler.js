@@ -20,6 +20,7 @@ module.exports.handleMessage = async (message) => {
             await handleUpdateChannelPolicy(params)
             return
         default:
-            throw new Error(`Unknown action: ${action}`)
+            console.error(`Unknown action: ${action}`)
+            return
     }
 }

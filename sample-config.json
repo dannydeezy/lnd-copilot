@@ -1,0 +1,7 @@
+{
+    "SQS_AWS_REGION": "us-east-1",
+    "SQS_AWS_ACCESS_KEY_ID": "AKIAIOSFODNN7EXAMPLE",
+    "SQS_AWS_SECRET_ACCESS_KEY": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "SQS_URL": "https://sqs.us-east-1.amazonaws.com/123456789012/MyQueue",
+    "MAX_REBALANCE_PPM": 5000
+}

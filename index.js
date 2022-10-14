@@ -1,11 +1,15 @@
 const { Consumer } = require('sqs-consumer')
 const AWS = require('aws-sdk')
+const fs = require('fs')
+if (!fs.existsSync('./config.json')) {
+    throw new Error(`No config.json found. Copy over sample-config.json to config.json and fill in your values`)
+}
 const config = require('./config.json')
 
 AWS.config.update({
-    region: config.QUEUE_AWS_REGION || 'us-east-1',
-    accessKeyId: config.AWS_ACCESS_KEY_ID,
-    secretAccessKey: config.AWS_SECRET_ACCESS_KEY
+    region: config.SQS_AWS_REGION || 'us-east-1',
+    accessKeyId: config.SQS_AWS_ACCESS_KEY_ID,
+    secretAccessKey: config.SQS_AWS_SECRET_ACCESS_KEY
 })
 
 async function handleMessage(message) {
@@ -14,7 +18,7 @@ async function handleMessage(message) {
 }
 
 const app = Consumer.create({
-    queueUrl: config.QUEUE_URL,
+    queueUrl: config.SQS_URL,
     handleMessage,
     sqs: new AWS.SQS()
 })

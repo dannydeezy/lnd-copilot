@@ -6,7 +6,7 @@ copilot runs alongside your lnd node and subscribes to commands from a third-par
 permitted operations are configurable by you
 
 ### setup
-- find a node management specialist like (@dannydeezy)[https://t.me/dannydeezy]
+- find a node management specialist like [@dannydeezy](https://t.me/dannydeezy)
 - create a readonly macaroon and give it to them, they will use this to monitor your node
 - the manager gives you an SQS queue to subscribe to, and some AWS account credentials
 - configure a `config.json` with all the revelant values (see `sample-config.json`)

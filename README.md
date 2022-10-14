@@ -1,7 +1,7 @@
 # lnd-copilot
 delegate management of your lnd node to a third party with limited permissions
 
-copilot runs alongside your lnd node and subscribes to commands from a third-party SQS queue
+copilot runs alongside your lnd node and subscribes to commands from a third-party
 
 permitted operations are configurable by you
 

@@ -1,7 +1,6 @@
 # lnd-copilot
-proprietary lnd node manager with limited permissions
-
-runs alongside lnd and subscribes to commands from a third-party SQS queue
+delegate management of your lnd node to a third party with limited permissions
+copilot runs alongside lnd and subscribes to commands from a third-party SQS queue
 
 ### setup
 - find a node management specialist like (@dannydeezy)[https://t.me/dannydeezy]

@@ -5,17 +5,12 @@ if (!fs.existsSync('./config.json')) {
     throw new Error(`No config.json found. Copy over sample-config.json to config.json and fill in your values`)
 }
 const config = require('./config.json')
-
+const { handleMessage } = require('./src/message-handler')
 AWS.config.update({
     region: config.SQS_AWS_REGION || 'us-east-1',
     accessKeyId: config.SQS_AWS_ACCESS_KEY_ID,
     secretAccessKey: config.SQS_AWS_SECRET_ACCESS_KEY
 })
-
-async function handleMessage(message) {
-    console.log(`Handling message`)
-    console.log(message)
-}
 
 const app = Consumer.create({
     queueUrl: config.SQS_URL,
